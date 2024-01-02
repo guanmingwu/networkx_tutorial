@@ -24,16 +24,6 @@ $ cd networkx_tutorial
 
 ``` 
 
-## Step 1.5 (optional): To use the `Graphviz` layouts, install `graphviz`
-
-Follow [these](https://graphviz.org/download/) instructions. Or, if you're using ubuntu: 
-
-```bash
-
-$ sudo apt-get install graphviz graphviz-dev
-
-```
-
 
 ## Step 2: Install the conda environment 
 
@@ -44,7 +34,26 @@ If you're new to conda, this is a helpful command [cheat sheet](https://docs.con
 
 ```bash 
 # create the conda env 
-$ conda env create --file environment.yml
+$ conda create --file environment.yml
+
+```
+
+**Note: This may be quite slow. In case it is too slow, try to install packages individually using pip after creating the environment with Python=3.10 as shown below.**
+
+```bash 
+# If you have not run the above command, create an environment first
+$ conda create -n nx_env python=3.10
+# activate the environment 
+$ conda activate nx_env
+
+# install packages individually 
+$ pip install networkx 
+$ pip install matplotlib 
+$ pip install pandas 
+$ pip install seaborn 
+$ pip install jupyter 
+$ pip install ipykernel 
+$ pip install scipy
 
 ```
 
@@ -56,7 +65,7 @@ $ conda activate nx_env
 
 ``` 
 
-## Step 4: Start a Jupyter session 
+## Step 4: Start a Jupyter session or Open the folder in VSCode (Preferred). To use VSCode, make sure it has Python lanugage extension bundle installed.
 
 ```bash 
 

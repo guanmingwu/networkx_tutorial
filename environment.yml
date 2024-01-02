@@ -5,19 +5,16 @@ channels:
   - conda-forge
 
 dependencies:
-  - python=3.9
+  - python=3.10
   - numpy 
   - pandas 
-  - networkx=2.6.2
+  - networkx
   - scikit-learn
   - seaborn
   - jupyter
   - matplotlib
-  - jupyter_contrib_nbextensions
-  - torch
   - pip
   - pip: 
     - jaal
     - cdlib
     - pydot
-    - scikit-network
